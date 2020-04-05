@@ -93,7 +93,7 @@ Link to live Application and Rest Endpoints:
 
 **GOTO Swagger UI:** (OpenAPI Doc)	[3.18.207.40:8081/servers/](http://3.18.207.40:8081/servers/)
 
-**GOTO Rest Endpoints:**	[3.18.207.40:8080/servers/](http://3.18.207.40:8080/servers/)
+**GOTO Rest Endpoints:**	[3.18.207.40:8080/servers/](http://3.18.207.40:8080/servers/getServer)
 
 **HOSTED** container images on dockerhub for public consumption	[hub.docker.com/u/imbipulkumar](https://hub.docker.com/u/imbipulkumar)
 
