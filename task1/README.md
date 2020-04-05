@@ -1,5 +1,9 @@
 # Task 1
 
+:globe_with_meridians: :rocket: [LIVE APP](http://3.18.207.40/)
+
+**NOTE:** [README First](README.md)
+
 ### Requirements
 
 - Java
@@ -106,4 +110,4 @@ Run the following created collection to Test and consume the APIs
 
 **NOTE:** *This part is Documented in Task4*
 
-**If run into problem, do not hesitate to comment or connect :) !**
+**If run into problem, do not hesitate to comment or connect :smile: !**

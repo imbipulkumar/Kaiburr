@@ -2,7 +2,7 @@
 
 Kaiburr Assessment Tasks
 
-[APP is LIVE](http://go.aws/kaiburr)
+:globe_with_meridians: :rocket: [LIVE APP](http://3.18.207.40/)
 
 ## Local Build Demo
 
@@ -89,9 +89,9 @@ Following George Foreman, I went extra miles and **DESIGNED** beautiful yet resp
 
 Link to live Application and Rest Endpoints:
 
-**GOTO Web App:**	[3.18.207.40](http://3.18.207.40:80)
+**GOTO Web App:**	[3.18.207.40](http://3.18.207.40/)
 
-**GOTO Swagger UI:** (OpenAPI Doc)	[3.18.207.40:8081](http://3.18.207.40:8081)
+**GOTO Swagger UI:** (OpenAPI Doc)	[3.18.207.40:8081/servers/](http://3.18.207.40:8081/servers/)
 
 **GOTO Rest Endpoints:**	[3.18.207.40:8080/servers/](http://3.18.207.40:8080/servers/)
 
@@ -102,5 +102,4 @@ License
 
 Unilicense
 
-**If you like the project then :star: Star the Repo and connect me on [Linkedin](https://www.linkedin.com/in/imbipulkumar/) :heart:**
-
+**If you like the project then :star: Star the Repo and connect me on [Linkedin](https://www.linkedin.com/in/imbipulkumar/) :heart:.**

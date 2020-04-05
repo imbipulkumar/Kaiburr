@@ -1,5 +1,9 @@
 # Task 2
 
+:globe_with_meridians: :rocket: [LIVE APP](http://3.18.207.40:8081/servers/)
+
+**NOTE:** [README First](README.md)
+
 ### Requirements
 
 - Java
@@ -125,4 +129,4 @@ http://localhost:8080/
 
 Change default port value in application.properties
 
-**If run into problem, do not hesitate to comment or connect :) !**
+**If run into problem, do not hesitate to comment or connect :smile: !**

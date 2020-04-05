@@ -1,5 +1,9 @@
 # Task 3
 
+:globe_with_meridians: :rocket: [LIVE APP](http://3.18.207.40/)
+
+**NOTE:** [README First](README.md)
+
 ### Requirements
 
 - Docker
@@ -82,4 +86,4 @@ spring-server_1  | 2020-04-04 21:05:03.885  INFO 1 --- [           main] o.apach
 
 **Note:** *The docker-compose part is Documented in Task3*
 
-**If run into problem, do not hesitate to comment or connect :) !**
+**If run into problem, do not hesitate to comment or connect :smile: !**

@@ -1,5 +1,9 @@
 # Task 4
 
+:globe_with_meridians: :rocket: [LIVE APP](http://3.18.207.40/)
+
+**NOTE:** [README First](README.md)
+
 ### Requirements
 
 - Node
@@ -140,4 +144,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-**If run into problem, do not hesitate to comment or connect :) !**
+**If run into problem, do not hesitate to comment or connect :smile: !**
