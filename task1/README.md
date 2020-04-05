@@ -104,6 +104,6 @@ Run the following created collection to Test and consume the APIs
 
 ### Using WebUIForms
 
-NOTE: This part is Documented in Task4
+**NOTE:** *This part is Documented in Task4*
 
-**If run into problem, do not hesitate to comment or connect :happy: !**
+**If run into problem, do not hesitate to comment or connect :) !**

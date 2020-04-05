@@ -125,4 +125,4 @@ http://localhost:8080/
 
 Change default port value in application.properties
 
-**If run into problem, do not hesitate to comment or connect :happy: !**
+**If run into problem, do not hesitate to comment or connect :) !**

@@ -43,7 +43,7 @@ findServerByName(name);	//axios.get
 
 #### Screenshots
 
-![WebUiFormGIF](/screenshots/task4WebUiForm.GIF)
+![WebUiFormGIF](/screenshots/task4WebUiForm.gif)
 
 ![WebUIForm](/screenshots/task4WebUIForm.PNG)
 
@@ -140,4 +140,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-**If run into problem, do not hesitate to comment or connect :happy: !**
+**If run into problem, do not hesitate to comment or connect :) !**
