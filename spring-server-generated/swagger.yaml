@@ -1,0 +1,168 @@
+swagger: '2.0'
+info:
+  description: 'This is a sample REST API with endpoints for searching, creating and deleting “server” objects.'
+  version: 1.0.0
+  title: Servers
+  contact: {}
+  license:
+    name: Unlicense
+    url: 'http://unlicense.org'
+host: '127.0.0.1:8080'
+basePath: /servers
+tags:
+  - name: createServer
+    description: the createServer API
+  - name: deleteServer
+    description: the deleteServer API
+  - name: getServer
+    description: the getServer API
+paths:
+  /createServer:
+    put:
+      tags:
+        - createServer
+      summary: Create a server object
+      operationId: createServer
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - in: body
+          name: body
+          description: Server object
+          required: true
+          schema:
+            $ref: '#/definitions/Server'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+        '201':
+          description: Server created successfully!
+          schema:
+            type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  /deleteServer:
+    delete:
+      tags:
+        - deleteServer
+      summary: Delete a server object
+      operationId: deleteServer
+      produces:
+        - '*/*'
+      parameters:
+        - name: id
+          in: query
+          description: Server object that needs to be deleted
+          required: true
+          type: string
+          allowEmptyValue: false
+      responses:
+        '200':
+          description: Server deleted successfully!
+          schema:
+            type: object
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  /getServer:
+    get:
+      tags:
+        - getServer
+      summary: Get all server objects
+      operationId: getServer
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: Server returned successfully!
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Server'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/getServer/id/{id}':
+    get:
+      tags:
+        - getServer
+      summary: Get a server object by id
+      operationId: getServerById
+      produces:
+        - '*/*'
+      parameters:
+        - name: id
+          in: path
+          description: Server id that needs to be found
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Server returned successfully!
+          schema:
+            type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/getServer/name/{name}':
+    get:
+      tags:
+        - getServer
+      summary: Get a server object by name
+      operationId: getServerByName
+      produces:
+        - '*/*'
+      parameters:
+        - name: name
+          in: path
+          description: Server name that needs to be found
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Server returned successfully!
+          schema:
+            type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+definitions:
+  Server:
+    type: object
+    properties:
+      framework:
+        type: string
+      id:
+        type: string
+      language:
+        type: string
+      name:
+        type: string
+    title: Server

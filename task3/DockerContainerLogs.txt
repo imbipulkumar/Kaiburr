@@ -1,0 +1,136 @@
+Microsoft Windows [Version 10.0.17763.1098]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\BIPUL KUMAR\Documents\Kaiburr\spring-server-generated>docker-compose up
+Creating network "spring-server-generated_default" with the default driver
+Creating mongodb ... done
+Creating spring-server-generated_spring-server_1 ... done
+Attaching to mongodb, spring-server-generated_spring-server_1
+mongodb          | 2020-04-04T21:04:27.640+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+mongodb          | 2020-04-04T21:04:28.302+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+mongodb          | 2020-04-04T21:04:28.380+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=02997a5690c9
+mongodb          | 2020-04-04T21:04:28.380+0000 I  CONTROL  [initandlisten] db version v4.2.5
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten] git version: 2261279b51ea13df08ae708ff278f0679c59dc32
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten] modules: none
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten] build environment:
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+mongodb          | 2020-04-04T21:04:28.381+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+mongodb          | 2020-04-04T21:04:28.382+0000 I  CONTROL  [initandlisten] options: { net: { bindIp: "*" } }
+mongodb          | 2020-04-04T21:04:28.385+0000 I  STORAGE  [initandlisten]
+mongodb          | 2020-04-04T21:04:28.385+0000 I  STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+mongodb          | 2020-04-04T21:04:28.385+0000 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+mongodb          | 2020-04-04T21:04:28.386+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=256M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+mongodb          | 2020-04-04T21:04:30.904+0000 I  STORAGE  [initandlisten] WiredTiger message [1586034270:869615][1:0x7f783ebdfb00], txn-recover: Set global recovery timestamp: (0, 0)
+mongodb          | 2020-04-04T21:04:31.588+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+mongodb          | 2020-04-04T21:04:32.508+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+mongodb          | 2020-04-04T21:04:32.818+0000 I  CONTROL  [initandlisten]
+mongodb          | 2020-04-04T21:04:32.818+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+mongodb          | 2020-04-04T21:04:32.818+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+mongodb          | 2020-04-04T21:04:32.818+0000 I  CONTROL  [initandlisten]
+mongodb          | 2020-04-04T21:04:33.295+0000 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: f45176c8-4f65-4c14-a85c-55b3b5e58c18 and options: { uuid: UUID("f45176c8-4f65-4c14-a85c-55b3b5e58c18") }
+mongodb          | 2020-04-04T21:04:34.240+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+mongodb          | 2020-04-04T21:04:34.513+0000 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+mongodb          | 2020-04-04T21:04:34.513+0000 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+mongodb          | 2020-04-04T21:04:34.540+0000 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+mongodb          | 2020-04-04T21:04:34.690+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+mongodb          | 2020-04-04T21:04:34.833+0000 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+mongodb          | 2020-04-04T21:04:34.904+0000 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 71a6d792-d60f-40c4-95c0-33147a362aa6 and options: { capped: true, size: 10485760 }
+mongodb          | 2020-04-04T21:04:35.430+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+mongodb          | 2020-04-04T21:04:35.431+0000 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+mongodb          | 2020-04-04T21:04:35.454+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+mongodb          | 2020-04-04T21:04:36.061+0000 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+mongodb          | 2020-04-04T21:04:36.062+0000 I  NETWORK  [listener] Listening on 0.0.0.0
+mongodb          | 2020-04-04T21:04:36.062+0000 I  NETWORK  [listener] waiting for connections on port 27017
+mongodb          | 2020-04-04T21:04:36.090+0000 I  SHARDING [LogicalSessionCacheReap] Marking collection config.system.sessions as collection version: <unsharded>
+mongodb          | 2020-04-04T21:04:36.095+0000 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+mongodb          | 2020-04-04T21:04:36.868+0000 I  COMMAND  [LogicalSessionCacheReap] command config.system.sessions command: listIndexes { listIndexes: "system.sessions", cursor: {}, $db: "config" } numYields:0 ok:0 errMsg:"ns does not exist: config.system.sessions" errName:NamespaceNotFound errCode:26 reslen:134 locks:{ ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_msg 735ms
+mongodb          | 2020-04-04T21:04:36.868+0000 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: listIndexes { listIndexes: "system.sessions", cursor: {}, $db: "config" } numYields:0 ok:0 errMsg:"ns does not exist: config.system.sessions" errName:NamespaceNotFound errCode:26 reslen:134 locks:{ ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_msg 734ms
+mongodb          | 2020-04-04T21:04:36.914+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+mongodb          | 2020-04-04T21:04:36.933+0000 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: 94a3c38c-e75f-4c17-ae77-456c864e9ad5 and options: { uuid: UUID("94a3c38c-e75f-4c17-ae77-456c864e9ad5") }
+mongodb          | 2020-04-04T21:04:37.522+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+mongodb          | 2020-04-04T21:04:38.187+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+mongodb          | 2020-04-04T21:04:38.187+0000 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 200 megabytes of RAM
+mongodb          | 2020-04-04T21:04:38.226+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+mongodb          | 2020-04-04T21:04:38.269+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+mongodb          | 2020-04-04T21:04:38.393+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+mongodb          | 2020-04-04T21:04:38.552+0000 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2, W: 1 } }, Collection: { acquireCount: { r: 4, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 1 } storage:{} protocol:op_msg 1638ms
+spring-server_1  |
+spring-server_1  |   .   ____          _            __ _ _
+spring-server_1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+spring-server_1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+spring-server_1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+spring-server_1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+spring-server_1  |  =========|_|==============|___/=/_/_/_/
+mongodb          | 2020-04-04T21:04:46.405+0000 I  COMMAND  [ftdc] serverStatus was very slow: { after basic: 26, after asserts: 83, after connections: 83, after electionMetrics: 119, after extra_info: 119, after flowControl: 140, after freeMonitoring: 150, after globalLock: 150, after locks: 212, after logicalSessionRecordCache: 240, after network: 240, after opLatencies: 240, after opReadConcernCounters: 240, after opcounters: 240, after opcountersRepl: 240, after oplogTruncation: 451, after repl: 451, after security: 451, after storageEngine: 520, after tcmalloc: 557, after trafficRecording: 557, after transactions: 557, after transportSecurity: 557, after twoPhaseCommitCoordinator: 597, after wiredTiger: 797, at end: 1225 }
+spring-server_1  |  :: Spring Boot ::       (v1.5.22.RELEASE)
+spring-server_1  |
+spring-server_1  | 2020-04-04 21:04:42.892  INFO 1 --- [           main] io.swagger.Swagger2SpringBoot            : Starting Swagger2SpringBoot v1.0.0 on d6751d26630a with PID 1 (/swagger-spring.jar started by root in /)
+spring-server_1  | 2020-04-04 21:04:42.948  INFO 1 --- [           main] io.swagger.Swagger2SpringBoot            : No active profile set, falling back to default profiles: default
+spring-server_1  | 2020-04-04 21:04:43.754  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5e91e4: startup date [Sat Apr 04 21:04:43 GMT 2020]; root of context hierarchy
+spring-server_1  | 2020-04-04 21:05:03.357  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+spring-server_1  | 2020-04-04 21:05:03.885  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+spring-server_1  | 2020-04-04 21:05:03.887  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.43
+spring-server_1  | 2020-04-04 21:05:04.625  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[.[localhost].[/servers]       : Initializing Spring embedded WebApplicationContext
+spring-server_1  | 2020-04-04 21:05:04.626  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 20981 ms
+spring-server_1  | 2020-04-04 21:05:05.572  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+spring-server_1  | 2020-04-04 21:05:05.662  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+spring-server_1  | 2020-04-04 21:05:05.703  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+spring-server_1  | 2020-04-04 21:05:05.704  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+spring-server_1  | 2020-04-04 21:05:05.705  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+spring-server_1  | 2020-04-04 21:05:10.548  INFO 1 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+mongodb          | 2020-04-04T21:05:12.667+0000 I  NETWORK  [listener] connection accepted from 172.20.0.3:48158 #1 (1 connection now open)
+mongodb          | 2020-04-04T21:05:13.433+0000 I  NETWORK  [conn1] received client metadata from 172.20.0.3:48158 conn1: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.19.76-linuxkit" }, platform: "Java/IcedTea/1.8.0_212-b04" }
+mongodb          | 2020-04-04T21:05:13.753+0000 I  COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: 1, client: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.19.76-linuxkit" }, platform: "Java/IcedTea/1.8.0_212-b04" }, $db: "admin" } numYields:0 reslen:257 locks:{} protocol:op_query 205ms
+mongodb          | 2020-04-04T21:05:14.004+0000 I  COMMAND  [conn1] command admin.$cmd command: buildInfo { buildinfo: 1, $db: "admin" } numYields:0 reslen:1349 locks:{} protocol:op_query 100ms
+spring-server_1  | 2020-04-04 21:05:14.170  INFO 1 --- [}-mongodb:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to mongodb:27017
+spring-server_1  | 2020-04-04 21:05:14.179  INFO 1 --- [}-mongodb:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, roundTripTimeNanos=4453600}
+spring-server_1  | 2020-04-04 21:05:16.695  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createServer],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> io.swagger.api.CreateServerApiController.createServer(io.swagger.model.Server)
+spring-server_1  | 2020-04-04 21:05:16.700  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteServer],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> io.swagger.api.DeleteServerApiController.deleteServer(java.lang.String)
+spring-server_1  | 2020-04-04 21:05:16.711  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getServer/id/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> io.swagger.api.GetServerApiController.getServerById(java.lang.String)
+spring-server_1  | 2020-04-04 21:05:16.715  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getServer/name/{name}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> io.swagger.api.GetServerApiController.getServerByName(java.lang.String)
+spring-server_1  | 2020-04-04 21:05:16.717  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getServer],methods=[GET]}" onto public java.util.List<io.swagger.model.Server> io.swagger.api.GetServerApiController.getServer()
+spring-server_1  | 2020-04-04 21:05:16.718  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String io.swagger.configuration.HomeController.index()
+spring-server_1  | 2020-04-04 21:05:16.749  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+spring-server_1  | 2020-04-04 21:05:16.756  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+spring-server_1  | 2020-04-04 21:05:16.760  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+spring-server_1  | 2020-04-04 21:05:16.774  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+spring-server_1  | 2020-04-04 21:05:16.776  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+spring-server_1  | 2020-04-04 21:05:17.393  INFO 1 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+spring-server_1  | 2020-04-04 21:05:18.256  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5e91e4: startup date [Sat Apr 04 21:04:43 GMT 2020]; root of context hierarchy
+spring-server_1  | 2020-04-04 21:05:18.657  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+spring-server_1  | 2020-04-04 21:05:18.658  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+spring-server_1  | 2020-04-04 21:05:18.968  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+spring-server_1  | 2020-04-04 21:05:22.334  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+spring-server_1  | 2020-04-04 21:05:22.379  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+spring-server_1  | 2020-04-04 21:05:22.379  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+spring-server_1  | 2020-04-04 21:05:22.814  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+spring-server_1  | 2020-04-04 21:05:23.089  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+mongodb          | 2020-04-04T21:05:25.676+0000 I  COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: 1, $db: "admin" } numYields:0 reslen:257 locks:{} protocol:op_query 337ms
+spring-server_1  | 2020-04-04 21:05:26.405  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+spring-server_1  | 2020-04-04 21:05:26.655  INFO 1 --- [           main] io.swagger.Swagger2SpringBoot            : Started Swagger2SpringBoot in 48.341 seconds (JVM running for 64.087)
+mongodb          | 2020-04-04T21:09:36.701+0000 I  COMMAND  [LogicalSessionCacheReap] command config.system.sessions command: listIndexes { listIndexes: "system.sessions", cursor: {}, $db: "config" } numYields:0 reslen:307 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 104ms
+mongodb          | 2020-04-04T21:09:36.715+0000 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: listIndexes { listIndexes: "system.sessions", cursor: {}, $db: "config" } numYields:0 reslen:307 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 104ms
+mongodb          | 2020-04-04T21:09:37.283+0000 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+mongodb          | 2020-04-04T21:09:37.346+0000 I  COMMAND  [LogicalSessionCacheReap] command config.transactions command: find { find: "transactions", filter: { lastWriteDate: { $lt: new Date(1586032776835) } }, projection: { _id: 1 }, sort: { _id: 1 }, $db: "config" } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:108 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 2 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 305ms
+spring-server_1  | 2020-04-04 21:09:43.631  INFO 1 --- [nio-8080-exec-7] o.a.c.c.C.[.[localhost].[/servers]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+spring-server_1  | 2020-04-04 21:09:43.853  INFO 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+spring-server_1  | 2020-04-04 21:09:45.809  INFO 1 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 1916 ms
+mongodb          | 2020-04-04T21:09:53.251+0000 I  NETWORK  [listener] connection accepted from 172.20.0.3:48186 #2 (2 connections now open)
+mongodb          | 2020-04-04T21:09:53.395+0000 I  NETWORK  [conn2] received client metadata from 172.20.0.3:48186 conn2: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "4.19.76-linuxkit" }, platform: "Java/IcedTea/1.8.0_212-b04" }
+spring-server_1  | 2020-04-04 21:09:53.653  INFO 1 --- [nio-8080-exec-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to mongodb:27017
+mongodb          | 2020-04-04T21:09:54.769+0000 I  SHARDING [conn2] Marking collection servers.servers as collection version: <unsharded>
+spring-server_1  | swagger-ui.html
+mongodb          | 2020-04-04T21:10:28.398+0000 I  COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: 1, $db: "admin" } numYields:0 reslen:257 locks:{} protocol:op_query 102ms
+spring-server_1  | swagger-ui.html
+mongodb          | 2020-04-04T21:10:36.507+0000 I  COMMAND  [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 142ms
+mongodb          | 2020-04-04T21:14:36.484+0000 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: listIndexes { listIndexes: "system.sessions", cursor: {}, $db: "config" } numYields:0 reslen:307 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_msg 135ms
+mongodb          | 2020-04-04T21:20:35.771+0000 I  STORAGE  [conn2] createCollection: servers.servers with generated UUID: 2de4abe4-ef46-4282-b130-9c9b7e38efa4 and options: {}
+mongodb          | 2020-04-04T21:20:36.705+0000 I  INDEX    [conn2] index build: done building index _id_ on ns servers.servers
+mongodb          | 2020-04-04T21:20:37.024+0000 I  WRITE    [conn2] update servers.servers command: { q: { _id: "301" }, u: { _class: "io.swagger.model.Server", _id: "301", name: "apache", language: "js", framework: "nodejs" }, multi: false, upsert: true } planSummary: IDHACK keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 4 } }, ReplicationStateTransition: { acquireCount: { w: 4 } }, Global: { acquireCount: { w: 4 } }, Database: { acquireCount: { w: 3, W: 1 } }, Collection: { acquireCount: { r: 2, w: 2, W: 1 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 4, timeAcquiringMicros: 5 } storage:{} 1364ms
+mongodb          | 2020-04-04T21:20:37.044+0000 I  COMMAND  [conn2] command servers.$cmd command: update { update: "servers", ordered: false, $db: "servers" } numYields:0 reslen:122 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 5 } }, ReplicationStateTransition: { acquireCount: { w: 5 } }, Global: { acquireCount: { r: 1, w: 4 } }, Database: { acquireCount: { w: 3, W: 1 } }, Collection: { acquireCount: { r: 2, w: 2, W: 1 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 4, timeAcquiringMicros: 5 } storage:{} protocol:op_query 1395ms
+Gracefully stopping... (press Ctrl+C again to force)
+Stopping spring-server-generated_spring-server_1 ... done
+Stopping mongodb                                 ... done
