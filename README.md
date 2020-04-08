@@ -10,10 +10,10 @@ Kaiburr Assessment Tasks
 
 ## Tasks Completed
 
-- [x] ###### Task 1. Java REST API
-- [x] ###### Task 2. Swagger codegen
-- [x] ###### Task 3. Docker compose
-- [x] ###### Task 4. WEB UI Forms
+- [x] [Task 1. Java REST API](/task1)
+- [x] [Task 2. Swagger codegen](/spring-server-generated)
+- [x] [Task 3. Docker compose](/task3)
+- [x] [Task 4. WEB UI Forms](/task4)
 
 ## High-level Directory Overview
 
@@ -93,7 +93,7 @@ Link to live Application and Rest Endpoints:
 
 **GOTO Swagger UI:** (OpenAPI Doc)	[3.18.207.40:8081/servers/](http://3.18.207.40:8081/servers/)
 
-**GOTO Rest Endpoints:**	[3.18.207.40:8080/servers/](http://3.18.207.40:8080/servers/getServer)
+**GOTO Rest Endpoints:**	[3.18.207.40:8080/servers/getServer](http://3.18.207.40:8080/servers/getServer)
 
 **HOSTED** container images on dockerhub for public consumption	[hub.docker.com/u/imbipulkumar](https://hub.docker.com/u/imbipulkumar)
 
